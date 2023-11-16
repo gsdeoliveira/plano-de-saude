@@ -1,0 +1,125 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+body,
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  max-width: 180rem;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: #39b4d3;
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero div {
+  width: 50%;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 4.2rem;
+}
+
+.form div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+div.form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 3rem;
+}
+
+div.texto {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.form input {
+  border: none;
+  outline-color: #98d5e5;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.hero .button-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.hero button {
+  width: 50%;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: #19aa79;
+  cursor: pointer;
+  color: #fff;
+  padding: 1rem 5rem;
+}
+
+.hero button:hover {
+  background-color: #1c8663;
+}
+
+@media (max-width: 1080px) {
+  body,
+  html {
+    font-size: 55%;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+
+  .texto {
+    text-align: center;
+  }
+
+  .hero div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem;
+  }
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+  .hero button {
+    width: 75%;
+  }
+}
