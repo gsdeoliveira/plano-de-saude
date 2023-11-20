@@ -214,6 +214,14 @@ div.texto {
   gap: 3rem;
 }
 
+.altura::after {
+  content: 'm';
+}
+
+.peso::after {
+  content: 'kg';
+}
+
 @media (max-width: 520px) {
   .outras-alternativas, .planos {
     padding: 1rem;
@@ -260,8 +268,13 @@ div.texto {
 }
 
 @media (max-width: 360px) {
+  body, html {
+    font-size: 45%;
+    overflow-x: hidden;
+  }
   .outras-alternativas, .planos {
     padding: 1rem;
     gap: 1rem;
   }
+
 }
