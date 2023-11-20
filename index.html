@@ -18,15 +18,19 @@
           <div class="form">
             <div>
               <label for="altura">Altura: </label>
-              <input type="text" id="altura" />
+              <input type="number" id="altura" />
             </div>
             <div>
               <label for="peso">Peso: </label>
               <input type="number" id="peso" />
             </div>
+            <div>
+              <label for="idade">Idade: </label>
+              <input type="number" id="idade" />
+            </div>
           </div>
           <div class="button-container">
-            <button>Ver Melhor Plano</button>
+            <button onclick="calculaMelhorPlano()">Ver Melhor Plano</button>
           </div>
         </div>
         <div>
@@ -34,72 +38,76 @@
         </div>
       </div>
       <div class="planos-container">
-        <h2>Seu melhor plano é o Plano A: Standard</h2>
-        <div class="planos">
-          <div class="plano">
-            <h3>Básico</h3>
-            <div>
-              <p>IMC: <span>20</span></p>
-              <p>Idade: <span>20 anos</span></p>
-              <p>Altura: <span>1.72m</span></p>
-              <p>Peso: <span>65kg</span></p>
+        <div>
+          <h2 class="titulo-um"></h2>
+          <div class="planos">
+            <div class="plano">
+              <h3>Básico</h3>
+              <div>
+                <p>IMC: <span class="imc"></span></p>
+                <p>Idade: <span class="idade"></span></p>
+                <p>Altura: <span class="altura"></span></p>
+                <p>Peso: <span class="peso"></span></p>
+              </div>
+              <p class="preco">R$ <span></span></p>
             </div>
-            <p class="preco">R$ 320,00</p>
-          </div>
-          <div class="plano" data-melhor-plano="true">
-            <h3>Standard</h3>
-            <div>
-              <p>IMC: <span>20</span></p>
-              <p>Idade: <span>20 anos</span></p>
-              <p>Altura: <span>1.72m</span></p>
-              <p>Peso: <span>65kg</span></p>
+            <div class="plano">
+              <h3>Standard</h3>
+              <div>
+                <p>IMC: <span class="imc"></span></p>
+                <p>Idade: <span class="idade"></span></p>
+                <p>Altura: <span class="altura"></span></p>
+                <p>Peso: <span class="peso"></span></p>
+              </div>
+              <p class="preco">R$ <span></span></p>
             </div>
-            <p class="preco">R$ 320,00</p>
-          </div>
-          <div class="plano">
-            <h3>Premium</h3>
-            <div>
-              <p>IMC: <span>20</span></p>
-              <p>Idade: <span>20 anos</span></p>
-              <p>Altura: <span>1.72m</span></p>
-              <p>Peso: <span>65kg</span></p>
+            <div class="plano">
+              <h3>Premium</h3>
+              <div>
+                <p>IMC: <span class="imc"></span></p>
+                <p>Idade: <span class="idade"></span></p>
+                <p>Altura: <span class="altura"></span></p>
+                <p>Peso: <span class="peso"></span></p>
+              </div>
+              <p class="preco">R$ <span></span></p>
             </div>
-            <p class="preco">R$ 320,00</p>
           </div>
         </div>
-        <h2>Veja também: Plano B</h2>
-        <div class="outras-alternativas">
-                    <div class="plano">
-            <h3>Básico</h3>
-            <div>
-              <p>IMC: <span>20</span></p>
-              <p>Idade: <span>20 anos</span></p>
-              <p>Altura: <span>1.72m</span></p>
-              <p>Peso: <span>65kg</span></p>
+        <div>
+          <h2 class="titulo-dois"></h2>
+          <div class="outras-alternativas">
+            <div class="plano">
+              <h3>Básico</h3>
+              <div>
+                <p>IMC: <span class="imc"></span></p>
+                <p>Idade: <span class="idade"></span></p>
+                <p>Altura: <span class="altura"></span></p>
+                <p>Peso: <span class="peso"></span></p>
+              </div>
+              <p class="preco">R$ <span></span></p>
             </div>
-            <p class="preco">R$ 320,00</p>
-          </div>
-          <div class="plano" data-melhor-plano="true">
-            <h3>Standard</h3>
-            <div>
-              <p>IMC: <span>20</span></p>
-              <p>Idade: <span>20 anos</span></p>
-              <p>Altura: <span>1.72m</span></p>
-              <p>Peso: <span>65kg</span></p>
+            <div class="plano">
+              <h3>Standard</h3>
+              <div>
+                <p>IMC: <span class="imc"></span></p>
+                <p>Idade: <span class="idade"></span></p>
+                <p>Altura: <span class="altura"></span></p>
+                <p>Peso: <span class="peso"></span></p>
+              </div>
+              <p class="preco">R$ <span></span></p>
             </div>
-            <p class="preco">R$ 320,00</p>
-          </div>
-          <div class="plano">
-            <h3>Premium</h3>
-            <div>
-              <p>IMC: <span>20</span></p>
-              <p>Idade: <span>20 anos</span></p>
-              <p>Altura: <span>1.72m</span></p>
-              <p>Peso: <span>65kg</span></p>
+            <div class="plano">
+              <h3>Premium</h3>
+              <div>
+                <p>IMC: <span class="imc"></span></p>
+                <p>Idade: <span class="idade"></span></p>
+                <p>Altura: <span class="altura"></span></p>
+                <p>Peso: <span class="peso"></span></p>
+              </div>
+              <p class="preco">R$ <span></span></p>
             </div>
-            <p class="preco">R$ 320,00</p>
+  
           </div>
-
         </div>
       </div>
     </main>

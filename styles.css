@@ -124,15 +124,32 @@ div.texto {
   }
 }
 .planos-container {
-  background-color: #19aa79;
-  padding-bottom: 5rem;
+  background: #19aa79 url('images/estetoscopio-medico-em-fundo-verde.jpg') center no-repeat;
+  background-size: cover;
+  display: none;
+  position: relative;
+  flex-direction: column;
+}
+
+.planos-container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #19aa7abd;
 }
 
 .planos-container h2 {
+  position: relative;
+  z-index: 10;
   padding-top: 5rem;
   margin-bottom: 5rem;
   color: white;
   text-align: center;
+  font-size: 3.2rem;
+}
+
+.planos-container h2 span {
   font-size: 3.2rem;
 }
 
@@ -145,8 +162,11 @@ div.texto {
 }
 
 .plano {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 10;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   gap: 2rem;
   background-color: #39b4d3;
@@ -155,7 +175,7 @@ div.texto {
   color: white;
 }
 
-.planos .plano[data-melhor-plano="true"] {
+.plano[data-melhor-plano="true"] {
   border: 2px solid white;
   scale: 1.1;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -169,6 +189,11 @@ div.texto {
 
 .preco {
   text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.plano .preco span {
   font-weight: bold;
   font-size: 2rem;
 }
@@ -211,6 +236,11 @@ div.texto {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  .planos-container h2 span {
+    font-size: 2.4rem;
+  }
+
   .plano p, .plano p span {
     font-size: 1.4rem;
   }
@@ -218,6 +248,12 @@ div.texto {
   .plano .preco {
     font-size: 1.6rem;
   }
+
+  .plano .preco span {
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+
   div.form {
     gap: 0.5rem;
   }
